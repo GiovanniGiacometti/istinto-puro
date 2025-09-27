@@ -1,17 +1,21 @@
 [project]
-name = "python-repo-template"
+name = "istinto-puro"
 version = "0.0.1"
-description = "A template for Python projects"
+description = "Istinto Puro"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [ { name = "Giovanni Giacometti", email = "giovanni.giacometti5@gmail.com" } ]
 requires-python = ">=3.12"
 dependencies = [
+    "dotenv>=0.9.9",
     "loguru>=0.7.3",
+    "pydantic>=2.11.9",
+    "requests>=2.32.5",
 ]
 
 [dependency-groups]
 dev = [
+    "jupyter>=1.1.1",
     "mypy>=1.15.0",
     "pre-commit>=4.1.0",
     "pytest>=8.3.4",
